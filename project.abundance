@@ -20,8 +20,8 @@
         {
             "atomType": "Molecule",
             "name": "sides",
-            "x": 0.18769551616266947,
-            "y": 0.36697247706422015,
+            "x": 0.22732012513034408,
+            "y": 0.38532110091743116,
             "uniqueID": 1743803503930,
             "ioValues": [
                 {
@@ -35,6 +35,10 @@
                 {
                     "name": "underwidth",
                     "ioValue": 40
+                },
+                {
+                    "name": "depth",
+                    "ioValue": 15
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -57,8 +61,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "side shape",
-                    "x": 0.15954118873826903,
-                    "y": 0.3241590214067278,
+                    "x": 0.1616266944734098,
+                    "y": 0.3516819571865443,
                     "uniqueID": 1743803526053,
                     "ioValues": [
                         {
@@ -371,8 +375,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.6371220020855057,
-                    "y": 0.6850152905198776,
+                    "x": 0.6444212721584984,
+                    "y": 0.6880733944954128,
                     "uniqueID": 1743803989302,
                     "ioValues": [
                         {
@@ -502,6 +506,16 @@
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "-w/2"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "depth",
+                    "x": 0.04,
+                    "y": 0.5,
+                    "uniqueID": 1743804223957,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
                 }
             ],
             "allConnectors": [
@@ -616,6 +630,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1743804160675,
                     "ap2ID": 1743803989302
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "depth",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804223957,
+                    "ap2ID": 1743803526053
                 }
             ],
             "fileTypeVersion": 1,
