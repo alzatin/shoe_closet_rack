@@ -31,6 +31,10 @@
                 {
                     "name": "height",
                     "ioValue": 15
+                },
+                {
+                    "name": "underwidth",
+                    "ioValue": 40
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -45,7 +49,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": ""
+                            "ioValue": 1743804008738
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -332,7 +336,7 @@
                     "atomType": "Input",
                     "name": "side thickness",
                     "x": 0.04,
-                    "y": 0.5,
+                    "y": 0.3211009174311927,
                     "uniqueID": 1743803915935,
                     "ioValues": [],
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
@@ -367,8 +371,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.5484880083420229,
-                    "y": 0.6207951070336392,
+                    "x": 0.6371220020855057,
+                    "y": 0.6850152905198776,
                     "uniqueID": 1743803989302,
                     "ioValues": [
                         {
@@ -381,11 +385,11 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": -20
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 7.5
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -393,10 +397,19 @@
                 {
                     "atomType": "Assembly",
                     "name": "Assembly",
-                    "x": 0.7893639207507821,
-                    "y": 0.5168195718654435,
+                    "x": 0.8008342022940562,
+                    "y": 0.5198776758409785,
                     "uniqueID": 1743804008738,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1743803989302
+                        },
+                        {
+                            "name": "Shape 2",
+                            "ioValue": 1743804097214
+                        }
+                    ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
                 },
                 {
@@ -423,6 +436,72 @@
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "h/2"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.6444212721584984,
+                    "y": 0.25382262996941896,
+                    "uniqueID": 1743804097214,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743803969334
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 20
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 7.5
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "underwidth",
+                    "x": 0.04,
+                    "y": 0.8409785932721712,
+                    "uniqueID": 1743804114645,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "w/2",
+                    "x": 0.4421272158498436,
+                    "y": 0.746177370030581,
+                    "uniqueID": 1743804141767,
+                    "ioValues": [
+                        {
+                            "name": "w",
+                            "ioValue": 40
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "w/2"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "-w/2",
+                    "x": 0.4306569343065693,
+                    "y": 0.8868501529051989,
+                    "uniqueID": 1743804160675,
+                    "ioValues": [
+                        {
+                            "name": "w",
+                            "ioValue": 40
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "-w/2"
                 }
             ],
             "allConnectors": [
@@ -456,6 +535,20 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743803969334,
+                    "ap2ID": 1743804097214
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1743803989302,
+                    "ap2ID": 1743804008738
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
                     "ap1ID": 1743804008738,
@@ -474,10 +567,59 @@
                     "ap2Primary": false,
                     "ap1ID": 1743804027393,
                     "ap2ID": 1743804045303
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804045303,
+                    "ap2ID": 1743803989302
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804045303,
+                    "ap2ID": 1743804097214
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 2",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804097214,
+                    "ap2ID": 1743804008738
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "w",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804114645,
+                    "ap2ID": 1743804141767
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "w",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804114645,
+                    "ap2ID": 1743804160675
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804141767,
+                    "ap2ID": 1743804097214
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743804160675,
+                    "ap2ID": 1743803989302
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [],
