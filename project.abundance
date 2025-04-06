@@ -38,8 +38,8 @@
         {
             "atomType": "Molecule",
             "name": "sides",
-            "x": 0.3066169617893756,
-            "y": 0.18042813455657492,
+            "x": 0.27306616961789376,
+            "y": 0.21712538226299696,
             "uniqueID": 1743803503930,
             "ioValues": [
                 {
@@ -663,8 +663,8 @@
         {
             "atomType": "Molecule",
             "name": "bench top",
-            "x": 0.3019571295433365,
-            "y": 0.4617737003058104,
+            "x": 0.3038210624417521,
+            "y": 0.40978593272171254,
             "uniqueID": 1743969946178,
             "ioValues": [
                 {
@@ -924,8 +924,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6309412861136999,
-            "y": 0.37003058103975534,
+            "x": 0.6356011183597391,
+            "y": 0.3577981651376147,
             "uniqueID": 1743970184352,
             "ioValues": [
                 {
@@ -946,8 +946,8 @@
         {
             "atomType": "Molecule",
             "name": "Wrungs",
-            "x": 0.3000931966449208,
-            "y": 0.7339449541284403,
+            "x": 0.29263746505125815,
+            "y": 0.6024464831804281,
             "uniqueID": 1743970295363,
             "ioValues": [
                 {
@@ -1499,11 +1499,27 @@
             ]
         },
         {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.603914259086673,
+            "y": 0.7308868501529051,
+            "uniqueID": 1743978982409,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1743970184352
+                }
+            ],
+            "description": "Extracts geometry containing the specified tag.",
+            "tag": "cut",
+            "tagIndex": 0
+        },
+        {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.7632805219012115,
-            "y": 0.7308868501529051,
-            "uniqueID": 1743978973956,
+            "x": 0.8070829450139795,
+            "y": 0.72782874617737,
+            "uniqueID": 1743979082226,
             "ioValues": [
                 {
                     "name": "geometry",
@@ -1511,7 +1527,7 @@
                 },
                 {
                     "name": "Material Thickness",
-                    "ioValue": 2
+                    "ioValue": 1.5
                 },
                 {
                     "name": "Sheet Width",
@@ -1530,20 +1546,68 @@
             "placements": []
         },
         {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.5992544268406338,
-            "y": 0.7400611620795107,
-            "uniqueID": 1743978982409,
+            "atomType": "Molecule",
+            "name": "underapron",
+            "x": 0.28797763280521904,
+            "y": 0.8134556574923547,
+            "uniqueID": 1743979216135,
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": 1743970184352
+                    "name": "bench width",
+                    "ioValue": 10
+                },
+                {
+                    "name": "bench depth",
+                    "ioValue": 10
+                },
+                {
+                    "name": "ply thick",
+                    "ioValue": 10
                 }
             ],
-            "description": "Extracts geometry containing the specified tag.",
-            "tag": "cut",
-            "tagIndex": 0
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1743979215660,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "bench width",
+                    "x": 0.04,
+                    "y": 0.6880733944954128,
+                    "uniqueID": 1743979216215,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "bench depth",
+                    "x": 0.04,
+                    "y": 0.39143730886850153,
+                    "uniqueID": 1743979215355,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "ply thick",
+                    "x": 0.04,
+                    "y": 0.5351681957186545,
+                    "uniqueID": 1743979215529,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
     "allConnectors": [
@@ -1643,7 +1707,7 @@
             "ap2Name": "geometry",
             "ap2Primary": false,
             "ap1ID": 1743978982409,
-            "ap2ID": 1743978973956
+            "ap2ID": 1743979082226
         }
     ],
     "unitsKey": "Inches",
