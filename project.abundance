@@ -658,8 +658,8 @@
         {
             "atomType": "Molecule",
             "name": "bench top",
-            "x": 0.31780055917986955,
-            "y": 0.4617737003058104,
+            "x": 0.3252562907735322,
+            "y": 0.4525993883792049,
             "uniqueID": 1743969946178,
             "ioValues": [
                 {
@@ -919,8 +919,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6309412861136999,
-            "y": 0.42507645259938837,
+            "x": 0.6402609506057781,
+            "y": 0.46788990825688076,
             "uniqueID": 1743970184352,
             "ioValues": [
                 {
@@ -930,6 +930,10 @@
                 {
                     "name": "Shape 2",
                     "ioValue": 1743969946178
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": 1743970295363
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -937,8 +941,8 @@
         {
             "atomType": "Molecule",
             "name": "Wrungs",
-            "x": 0.30941286113699906,
-            "y": 0.7308868501529051,
+            "x": 0.32152842497670087,
+            "y": 0.7339449541284403,
             "uniqueID": 1743970295363,
             "ioValues": [
                 {
@@ -963,7 +967,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1743970295844,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1743977768196
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -1028,8 +1037,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.48182665424044735,
-                    "y": 0.39143730886850153,
+                    "x": 0.4790307548928238,
+                    "y": 0.37920489296636084,
                     "uniqueID": 1743977470167,
                     "ioValues": [
                         {
@@ -1217,7 +1226,7 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x/4",
+                    "name": "x/3",
                     "x": 0.46784715750232997,
                     "y": 0.672782874617737,
                     "uniqueID": 1743977593914,
@@ -1228,7 +1237,89 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x/4"
+                    "currentEquation": "x/3"
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.7418452935694315,
+                    "y": 0.4342507645259939,
+                    "uniqueID": 1743977725394,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743977529023
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.8108108108108107,
+                    "y": 0.7951070336391437,
+                    "uniqueID": 1743977768196,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743977725394
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": -3
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 25
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 5
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x/2",
+                    "x": 0.6486486486486486,
+                    "y": 0.7522935779816513,
+                    "uniqueID": 1743977777843,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 50
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "x/2"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "-x/6",
+                    "x": 0.6952469711090401,
+                    "y": 0.5718654434250764,
+                    "uniqueID": 1743977833656,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 18
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "-x/6"
                 }
             ],
             "allConnectors": [
@@ -1243,8 +1334,22 @@
                     "ap1Name": "number or geometry",
                     "ap2Name": "x",
                     "ap2Primary": false,
+                    "ap1ID": 1743970295892,
+                    "ap2ID": 1743977777843
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
                     "ap1ID": 1743970296225,
                     "ap2ID": 1743977593914
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1743970296225,
+                    "ap2ID": 1743977833656
                 },
                 {
                     "ap1Name": "geometry",
@@ -1266,10 +1371,52 @@
                     "ap2Primary": false,
                     "ap1ID": 1743977470167,
                     "ap2ID": 1743977529023
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743977529023,
+                    "ap2ID": 1743977725394
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "Number",
+                    "ap2Primary": false,
+                    "ap1ID": 1743977593914,
+                    "ap2ID": 1743977529023
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743977725394,
+                    "ap2ID": 1743977768196
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1743977768196,
+                    "ap2ID": 1743970295844
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "yDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743977777843,
+                    "ap2ID": 1743977768196
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "xDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1743977833656,
+                    "ap2ID": 1743977768196
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [
@@ -1328,6 +1475,13 @@
             "ap2Primary": false,
             "ap1ID": 1743970148294,
             "ap2ID": 1743970295363
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 3",
+            "ap2Primary": false,
+            "ap1ID": 1743970295363,
+            "ap2ID": 1743970184352
         }
     ],
     "unitsKey": "Inches",
