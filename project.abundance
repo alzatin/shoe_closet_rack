@@ -4,7 +4,20 @@
     "x": 0,
     "y": 0,
     "uniqueID": 1743803464869,
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "bench width",
+            "ioValue": 50
+        },
+        {
+            "name": "bench depth",
+            "ioValue": 18
+        },
+        {
+            "name": "ply thick",
+            "ioValue": 0.75
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -20,8 +33,8 @@
         {
             "atomType": "Molecule",
             "name": "sides",
-            "x": 0.22732012513034408,
-            "y": 0.38532110091743116,
+            "x": 0.2972972972972973,
+            "y": 0.3363914373088685,
             "uniqueID": 1743803503930,
             "ioValues": [
                 {
@@ -641,9 +654,303 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Molecule",
+            "name": "bench top",
+            "x": 0.31593662628145386,
+            "y": 0.5902140672782874,
+            "uniqueID": 1743969946178,
+            "ioValues": [
+                {
+                    "name": "bench width",
+                    "ioValue": 50
+                },
+                {
+                    "name": "bench depth",
+                    "ioValue": 18
+                },
+                {
+                    "name": "bench thick",
+                    "ioValue": 1
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1743969947062,
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1743970005602
+                        }
+                    ],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.20410065237651445,
+                    "y": 0.4403669724770642,
+                    "uniqueID": 1743969976329,
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 50
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 18
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.47437092264678477,
+                    "y": 0.39143730886850153,
+                    "uniqueID": 1743970005602,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743969976329
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 1
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "bench width",
+                    "x": 0.04,
+                    "y": 0.6880733944954128,
+                    "uniqueID": 1743970012818,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "bench depth",
+                    "x": 0.04,
+                    "y": 0.3302752293577982,
+                    "uniqueID": 1743970025152,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "bench thick",
+                    "x": 0.04,
+                    "y": 0.4954128440366972,
+                    "uniqueID": 1743970098022,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.7735321528424977,
+                    "y": 0.691131498470948,
+                    "uniqueID": 1743970196183,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743970198981
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 0.6104380242311277,
+                    "y": 0.6483180428134556,
+                    "uniqueID": 1743970198981,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1743970005602
+                        },
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 90
+                        }
+                    ],
+                    "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743969976329,
+                    "ap2ID": 1743970005602
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1743970005602,
+                    "ap2ID": 1743969947062
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743970005602,
+                    "ap2ID": 1743970198981
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x length",
+                    "ap2Primary": false,
+                    "ap1ID": 1743970012818,
+                    "ap2ID": 1743969976329
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1743970025152,
+                    "ap2ID": 1743969976329
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1743970098022,
+                    "ap2ID": 1743970005602
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1743970198981,
+                    "ap2ID": 1743970196183
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": []
+        },
+        {
+            "atomType": "Input",
+            "name": "bench width",
+            "x": 0.04,
+            "y": 0.6880733944954128,
+            "uniqueID": 1743970044680,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "bench depth",
+            "x": 0.04,
+            "y": 0.3883792048929664,
+            "uniqueID": 1743970051360,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "ply thick",
+            "x": 0.04,
+            "y": 0.5351681957186545,
+            "uniqueID": 1743970148294,
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.6309412861136999,
+            "y": 0.44648318042813456,
+            "uniqueID": 1743970184352,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1743803503930
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": 1743969946178
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1743803503930,
+            "ap2ID": 1743970184352
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 2",
+            "ap2Primary": false,
+            "ap1ID": 1743969946178,
+            "ap2ID": 1743970184352
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "bench width",
+            "ap2Primary": false,
+            "ap1ID": 1743970044680,
+            "ap2ID": 1743969946178
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "bench depth",
+            "ap2Primary": false,
+            "ap1ID": 1743970051360,
+            "ap2ID": 1743969946178
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "side thickness",
+            "ap2Primary": false,
+            "ap1ID": 1743970148294,
+            "ap2ID": 1743803503930
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
