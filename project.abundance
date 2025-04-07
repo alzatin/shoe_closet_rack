@@ -932,8 +932,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.6328052190121156,
-            "y": 0.3577981651376147,
+            "x": 0.6300093196644921,
+            "y": 0.37003058103975534,
             "uniqueID": 1743970184352,
             "ioValues": [
                 {
@@ -1302,7 +1302,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 20
+                            "ioValue": 19.5
                         },
                         {
                             "name": "zDist",
@@ -1313,9 +1313,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x/2",
-                    "x": 0.6486486486486486,
-                    "y": 0.7522935779816513,
+                    "name": "x/2 -.5",
+                    "x": 0.6169617893755824,
+                    "y": 0.8195718654434251,
                     "uniqueID": 1743977777843,
                     "ioValues": [
                         {
@@ -1324,7 +1324,7 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x/2"
+                    "currentEquation": "x/2 -.5"
                 },
                 {
                     "atomType": "Equation",
@@ -1525,8 +1525,8 @@
         {
             "atomType": "CutLayout",
             "name": "Cut Layout",
-            "x": 0.7781919850885368,
-            "y": 0.7155963302752294,
+            "x": 0.7753960857409133,
+            "y": 0.7125382262996942,
             "uniqueID": 1743979082226,
             "ioValues": [
                 {
