@@ -50,8 +50,8 @@
         {
             "atomType": "Molecule",
             "name": "sides",
-            "x": 0.27327070879590093,
-            "y": 0.25382262996941896,
+            "x": 0.2782340862422998,
+            "y": 0.28134556574923547,
             "uniqueID": 1743803503930,
             "ioValues": [
                 {
@@ -419,7 +419,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -19.625
+                            "ioValue": -19.25
                         },
                         {
                             "name": "zDist",
@@ -488,7 +488,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 19.625
+                            "ioValue": 20
                         },
                         {
                             "name": "zDist",
@@ -509,26 +509,22 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "w/2 - y/2",
-                    "x": 0.44045174537987675,
-                    "y": 0.7522935779816513,
+                    "name": "w/2",
+                    "x": 0.44147843942505127,
+                    "y": 0.7492354740061162,
                     "uniqueID": 1743804141767,
                     "ioValues": [
                         {
                             "name": "w",
                             "ioValue": 40
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 0.75
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "w/2 - y/2"
+                    "currentEquation": "w/2"
                 },
                 {
                     "atomType": "Equation",
-                    "name": "-w/2 + y/2",
+                    "name": "-w/2 + y",
                     "x": 0.4312114989733059,
                     "y": 0.8929663608562691,
                     "uniqueID": 1743804160675,
@@ -543,7 +539,7 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "-w/2 + y/2"
+                    "currentEquation": "-w/2 + y"
                 },
                 {
                     "atomType": "Input",
@@ -577,13 +573,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1743803915935,
                     "ap2ID": 1743803911136
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "y",
-                    "ap2Primary": false,
-                    "ap1ID": 1743803915935,
-                    "ap2ID": 1743804141767
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -975,8 +964,8 @@
                     "ioValue": 1743978937557
                 },
                 {
-                    "name": "Shape 9",
-                    "ioValue": 1743979216135
+                    "name": "Shape 10",
+                    "ioValue": 1744220201946
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -1292,8 +1281,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.7418452935694315,
-                    "y": 0.44648318042813456,
+                    "x": 0.7402464065708418,
+                    "y": 0.4403669724770642,
                     "uniqueID": 1743977725394,
                     "ioValues": [
                         {
@@ -1318,8 +1307,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.809878844361603,
-                    "y": 0.798165137614679,
+                    "x": 0.8203285420944558,
+                    "y": 0.8195718654434251,
                     "uniqueID": 1743977768196,
                     "ioValues": [
                         {
@@ -1332,7 +1321,7 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 19.5
+                            "ioValue": 20
                         },
                         {
                             "name": "zDist",
@@ -1343,9 +1332,9 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "x/2 -.5",
-                    "x": 0.6169617893755824,
-                    "y": 0.8195718654434251,
+                    "name": "x/2",
+                    "x": 0.6139630390143737,
+                    "y": 0.8226299694189603,
                     "uniqueID": 1743977777843,
                     "ioValues": [
                         {
@@ -1354,7 +1343,7 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x/2 -.5"
+                    "currentEquation": "x/2"
                 },
                 {
                     "atomType": "Equation",
@@ -1522,7 +1511,7 @@
         {
             "atomType": "Tag",
             "name": "cut",
-            "x": 0.4310344827586207,
+            "x": 0.42915811088295686,
             "y": 0.37920489296636084,
             "uniqueID": 1743978937557,
             "ioValues": [
@@ -1539,8 +1528,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.5900939368061486,
-            "y": 0.8195718654434251,
+            "x": 0.6386036960985627,
+            "y": 0.7889908256880733,
             "uniqueID": 1743978982409,
             "ioValues": [
                 {
@@ -1565,11 +1554,11 @@
                 },
                 {
                     "name": "Material Thickness",
-                    "ioValue": 1.5
+                    "ioValue": 1.75
                 },
                 {
                     "name": "Sheet Width",
-                    "ioValue": 96
+                    "ioValue": 95
                 },
                 {
                     "name": "Sheet Height",
@@ -2300,6 +2289,23 @@
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Tag",
+            "name": "cut",
+            "x": 0.47125256673511295,
+            "y": 0.8470948012232417,
+            "uniqueID": 1744220201946,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1743979216135
+                }
+            ],
+            "description": "Tags geometry so that it can be extracted later.",
+            "tags": [
+                "cut"
+            ]
         }
     ],
     "allConnectors": [
@@ -2410,10 +2416,10 @@
         },
         {
             "ap1Name": "Geometry",
-            "ap2Name": "Shape 9",
-            "ap2Primary": false,
+            "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": 1743979216135,
-            "ap2ID": 1743970184352
+            "ap2ID": 1744220201946
         },
         {
             "ap1Name": "number or geometry",
@@ -2442,6 +2448,13 @@
             "ap2Primary": false,
             "ap1ID": 1744219867504,
             "ap2ID": 1743803503930
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 10",
+            "ap2Primary": false,
+            "ap1ID": 1744220201946,
+            "ap2ID": 1743970184352
         }
     ],
     "unitsKey": "Inches",
