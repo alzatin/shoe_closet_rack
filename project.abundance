@@ -46,8 +46,8 @@
         {
             "atomType": "Molecule",
             "name": "sides",
-            "x": 0.27306616961789376,
-            "y": 0.21712538226299696,
+            "x": 0.27327070879590093,
+            "y": 0.25382262996941896,
             "uniqueID": 1743803503930,
             "ioValues": [
                 {
@@ -671,8 +671,8 @@
         {
             "atomType": "Molecule",
             "name": "bench top",
-            "x": 0.3038210624417521,
-            "y": 0.39449541284403666,
+            "x": 0.2852263023057216,
+            "y": 0.4923547400611621,
             "uniqueID": 1743969946178,
             "ioValues": [
                 {
@@ -932,8 +932,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.5890804597701149,
-            "y": 0.41284403669724773,
+            "x": 0.5542271562766866,
+            "y": 0.42201834862385323,
             "uniqueID": 1743970184352,
             "ioValues": [
                 {
@@ -954,7 +954,7 @@
         {
             "atomType": "Molecule",
             "name": "Wrungs",
-            "x": 0.34762348555452005,
+            "x": 0.39111870196413323,
             "y": 0.581039755351682,
             "uniqueID": 1743970295363,
             "ioValues": [
@@ -1475,8 +1475,8 @@
         {
             "atomType": "Tag",
             "name": "cut",
-            "x": 0.5200372786579683,
-            "y": 0.18654434250764526,
+            "x": 0.48761742100768574,
+            "y": 0.1743119266055046,
             "uniqueID": 1743978930996,
             "ioValues": [
                 {
@@ -1509,8 +1509,8 @@
         {
             "atomType": "ExtractTag",
             "name": "Extract Tag",
-            "x": 0.5871647509578544,
-            "y": 0.8165137614678898,
+            "x": 0.5900939368061486,
+            "y": 0.8195718654434251,
             "uniqueID": 1743978982409,
             "ioValues": [
                 {
@@ -1556,8 +1556,8 @@
         {
             "atomType": "Molecule",
             "name": "underapron",
-            "x": 0.28238583410997203,
-            "y": 0.798165137614679,
+            "x": 0.27156276686592656,
+            "y": 0.8501529051987767,
             "uniqueID": 1743979216135,
             "ioValues": [
                 {
@@ -1570,7 +1570,7 @@
                 },
                 {
                     "name": "ply thick",
-                    "ioValue": 10
+                    "ioValue": 0.75
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -1615,23 +1615,111 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.3271202236719478,
-                    "y": 0.5076452599388379,
+                    "x": 0.29803586678052946,
+                    "y": 0.37614678899082565,
                     "uniqueID": 1744040346206,
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10
+                            "ioValue": 3
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10
+                            "ioValue": 50
                         }
                     ],
                     "description": "Creates a new rectangle."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x",
+                    "x": 0.19897523484201537,
+                    "y": 0.7003058103975535,
+                    "uniqueID": 1744208404961,
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 50
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "x"
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.43381725021349277,
+                    "y": 0.5963302752293578,
+                    "uniqueID": 1744208429285,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1744040346206
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 0.75
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.690862510674637,
+                    "y": 0.6299694189602446,
+                    "uniqueID": 1744208471010,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": ""
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap2Primary": false,
+                    "ap1ID": 1743979216215,
+                    "ap2ID": 1744208404961
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1743979215529,
+                    "ap2ID": 1744208429285
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1744040346206,
+                    "ap2ID": 1744208429285
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "y length",
+                    "ap2Primary": false,
+                    "ap1ID": 1744208404961,
+                    "ap2ID": 1744040346206
+                }
+            ],
             "fileTypeVersion": 1,
             "compiledBom": {}
         },
@@ -1719,6 +1807,13 @@
             "ap2Primary": false,
             "ap1ID": 1743970148294,
             "ap2ID": 1743970295363
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "ply thick",
+            "ap2Primary": false,
+            "ap1ID": 1743970148294,
+            "ap2ID": 1743979216135
         },
         {
             "ap1Name": "geometry",
