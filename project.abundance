@@ -192,7 +192,50 @@
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": []
+            "placements": [
+                [
+                    {
+                        "id": 1,
+                        "rotate": 330,
+                        "translate": {
+                            "x": 10.59395834187,
+                            "y": 10.59395832356873
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "rotate": 60,
+                        "translate": {
+                            "x": 26.49940266909979,
+                            "y": 21.214059658540037
+                        }
+                    },
+                    {
+                        "id": 3,
+                        "rotate": 0,
+                        "translate": {
+                            "x": 54.823805430529234,
+                            "y": 20.325000117290287
+                        }
+                    },
+                    {
+                        "id": 0,
+                        "rotate": 210,
+                        "translate": {
+                            "x": 42.404847091869996,
+                            "y": 35.03147872001277
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "rotate": 270,
+                        "translate": {
+                            "x": 20.325000117290287,
+                            "y": 43.682056133333326
+                        }
+                    }
+                ]
+            ]
         },
         {
             "atomType": "Input",
@@ -2354,6 +2397,48 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Gcode",
+            "name": "Gcode",
+            "x": 0.8110236220472442,
+            "y": 0.31626506024096385,
+            "uniqueID": "7f672570-0c26-486c-88c5-40e9f2f99013",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1743979082226,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Tool Size",
+                    "ioValue": 0.25,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Passes",
+                    "ioValue": 2,
+                    "currentEquation": "2"
+                },
+                {
+                    "name": "Speed",
+                    "ioValue": 1500,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Cut Through",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "shoe_closet_rack",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Generates Maslow gcode from the input geometry. For single parts, generates one gcode file. For assemblies, extracts individual parts, sorts them based on the selected direction (Left, Right, Top, or Bottom) using bounding boxes, generates gcode for each part sequentially, and concatenates the results into one file.",
+            "partName": "shoe_closet_rack",
+            "sortDirection": "Left"
         }
     ],
     "allConnectors": [
@@ -2428,6 +2513,12 @@
             "ap2Name": "geometry",
             "ap1ID": 1743978982409,
             "ap2ID": 1743979082226
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": 1743979082226,
+            "ap2ID": "7f672570-0c26-486c-88c5-40e9f2f99013"
         },
         {
             "ap1Name": "number or geometry",
