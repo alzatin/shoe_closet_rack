@@ -2,7 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|1"Dowel|6|$18|www.example.com|
-|Total: |6|$18| |
-
- 3xCOG MSRP: $54.00
+|1"Dowel|6|$18.00|www.example.com|
+|Total: |6|$18.00| |
