@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "bench width",
-      "ioValue": 51,
-      "currentEquation": "51"
+      "ioValue": 51
     },
     {
       "name": "bench depth",
@@ -589,8 +588,8 @@
     {
       "atomType": "ExtractTag",
       "name": "Extract Tag",
-      "x": 0.656686626746507,
-      "y": 0.5279503105590062,
+      "x": 0.6294326241134751,
+      "y": 0.6149068322981366,
       "uniqueID": 1743978982409,
       "ioValues": [],
       "tag": "cut",
