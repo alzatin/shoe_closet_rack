@@ -2,7 +2,17 @@
 
 # shoe_closet_rack
 
-![](/project.svg)
+![](/project.png)
+
+## Inputs
+
+- **bench width** (number)
+- **bench depth** (number)
+- **ply thick** (number)
+- **bench height** (number)
+- **underwidth** (number)
+- **side height** (number)
+
 
 
 
