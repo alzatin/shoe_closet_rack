@@ -7,8 +7,7 @@
   "ioValues": [
     {
       "name": "bench width",
-      "ioValue": 45,
-      "currentEquation": "45"
+      "ioValue": 45
     },
     {
       "name": "bench depth",
@@ -829,16 +828,16 @@
       "name": "Wrungs",
       "ioValues": [
         {
+          "name": "ply thick",
+          "ioValue": 0.75
+        },
+        {
           "name": "bench width",
           "ioValue": 40
         },
         {
           "name": "bench depth",
           "ioValue": 18
-        },
-        {
-          "name": "ply thick",
-          "ioValue": 0.75
         }
       ],
       "topLevel": false,
@@ -858,21 +857,21 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "y": 0.15384615384615385,
           "uniqueID": 1743970295865,
           "name": "ply thick"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "y": 0.24615384615384617,
           "uniqueID": 1743970295892,
           "name": "bench width"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "y": 0.3384615384615385,
           "uniqueID": 1743970296225,
           "name": "bench depth"
         },
@@ -969,7 +968,7 @@
             {
               "atomType": "Input",
               "x": 0.025384615384615384,
-              "y": 0.3384615384615385,
+              "y": 0.24615384615384617,
               "uniqueID": 1743977528928,
               "name": "Geometry",
               "type": "number"
@@ -1015,7 +1014,7 @@
             {
               "atomType": "Input",
               "x": 0.025384615384615384,
-              "y": 0.24615384615384617,
+              "y": 0.3384615384615385,
               "uniqueID": 1743977529348,
               "name": "Dist",
               "type": "number"
@@ -1023,23 +1022,23 @@
           ],
           "allConnectors": [
             {
-              "ap2Name": "number or geometry",
-              "ap1ID": 1743977529133,
-              "ap2ID": 1743977528719
-            },
-            {
               "ap2Name": "Number",
               "ap1ID": 1743977528821,
               "ap2ID": 1743977529133
             },
             {
-              "ap2Name": "Dist",
-              "ap1ID": 1743977529348,
+              "ap2Name": "Shape",
+              "ap1ID": 1743977528928,
               "ap2ID": 1743977529133
             },
             {
-              "ap2Name": "Shape",
-              "ap1ID": 1743977528928,
+              "ap2Name": "number or geometry",
+              "ap1ID": 1743977529133,
+              "ap2ID": 1743977528719
+            },
+            {
+              "ap2Name": "Dist",
+              "ap1ID": 1743977529348,
               "ap2ID": 1743977529133
             }
           ],
@@ -1332,8 +1331,7 @@
         },
         {
           "name": "Sheet Width",
-          "ioValue": 95,
-          "currentEquation": "95"
+          "ioValue": 95
         },
         {
           "name": "Sheet Height",
@@ -1401,16 +1399,16 @@
       "name": "underapron",
       "ioValues": [
         {
-          "name": "bench width",
-          "ioValue": 40
-        },
-        {
           "name": "bench depth",
           "ioValue": 18
         },
         {
           "name": "ply thick",
           "ioValue": 0.75
+        },
+        {
+          "name": "bench width",
+          "ioValue": 40
         },
         {
           "name": "side height",
@@ -1422,14 +1420,14 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "y": 0.15384615384615385,
           "uniqueID": 1743979215355,
           "name": "bench depth"
         },
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.3384615384615385,
+          "y": 0.24615384615384617,
           "uniqueID": 1743979215529,
           "name": "ply thick"
         },
@@ -1448,7 +1446,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
+          "y": 0.3384615384615385,
           "uniqueID": 1743979216215,
           "name": "bench width"
         },
@@ -1816,6 +1814,11 @@
           "allConnectors": [
             {
               "ap2Name": "geometry",
+              "ap1ID": "29a00338-2415-424d-bd4c-5a295f9f0eaa",
+              "ap2ID": "1831a5ea-779c-417e-8ca3-caba4de4d888"
+            },
+            {
+              "ap2Name": "geometry",
               "ap1ID": "778ab279-b09f-471f-805c-5fd021421dc8",
               "ap2ID": "c837e9f1-8dba-45a3-82b8-299d58f3d2e0"
             },
@@ -1825,19 +1828,9 @@
               "ap2ID": "ee59c727-df8a-43b2-bbdc-20e776017bba"
             },
             {
-              "ap2Name": "Shape 4",
-              "ap1ID": "ee59c727-df8a-43b2-bbdc-20e776017bba",
-              "ap2ID": "e4d42faa-f22e-4363-bf5c-fbeffd109b49"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "29a00338-2415-424d-bd4c-5a295f9f0eaa",
-              "ap2ID": "1831a5ea-779c-417e-8ca3-caba4de4d888"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "e4d42faa-f22e-4363-bf5c-fbeffd109b49",
-              "ap2ID": "bf1aabe9-ad00-4d57-afb7-5c838700fb4d"
+              "ap2Name": "number or geometry",
+              "ap1ID": "bf1aabe9-ad00-4d57-afb7-5c838700fb4d",
+              "ap2ID": "f0f82a25-6a78-47ab-b11d-84abf1673fdc"
             },
             {
               "ap2Name": "Shape 3",
@@ -1845,9 +1838,14 @@
               "ap2ID": "e4d42faa-f22e-4363-bf5c-fbeffd109b49"
             },
             {
-              "ap2Name": "number or geometry",
-              "ap1ID": "bf1aabe9-ad00-4d57-afb7-5c838700fb4d",
-              "ap2ID": "f0f82a25-6a78-47ab-b11d-84abf1673fdc"
+              "ap2Name": "geometry",
+              "ap1ID": "e4d42faa-f22e-4363-bf5c-fbeffd109b49",
+              "ap2ID": "bf1aabe9-ad00-4d57-afb7-5c838700fb4d"
+            },
+            {
+              "ap2Name": "Shape 4",
+              "ap1ID": "ee59c727-df8a-43b2-bbdc-20e776017bba",
+              "ap2ID": "e4d42faa-f22e-4363-bf5c-fbeffd109b49"
             }
           ],
           "parentRepo": {
@@ -1879,11 +1877,6 @@
       "allConnectors": [
         {
           "ap2Name": "x",
-          "ap1ID": 1743979216215,
-          "ap2ID": 1744208404961
-        },
-        {
-          "ap2Name": "x",
           "ap1ID": 1743979215355,
           "ap2ID": 1744219789726
         },
@@ -1896,6 +1889,11 @@
           "ap2Name": "height",
           "ap1ID": 1743979215529,
           "ap2ID": 1744208429285
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": 1743979216215,
+          "ap2ID": 1744208404961
         },
         {
           "ap2Name": "geometry",
@@ -2170,6 +2168,16 @@
     },
     {
       "ap2Name": "geometry",
+      "ap1ID": "id-282",
+      "ap2ID": 1743979082226
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-282",
+      "ap2ID": "7f672570-0c26-486c-88c5-40e9f2f99013"
+    },
+    {
+      "ap2Name": "geometry",
       "ap1ID": 1743969946178,
       "ap2ID": 1743978937557
     },
@@ -2187,16 +2195,6 @@
       "ap2Name": "geometry",
       "ap1ID": 1743979216135,
       "ap2ID": 1744220201946
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-282",
-      "ap2ID": 1743979082226
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-282",
-      "ap2ID": "7f672570-0c26-486c-88c5-40e9f2f99013"
     }
   ],
   "unitsKey": "Inches",
