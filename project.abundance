@@ -134,7 +134,8 @@
               "y": 0.2,
               "uniqueID": 1743803542882,
               "name": "height",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "Input",
@@ -142,7 +143,8 @@
               "y": 0.2,
               "uniqueID": 1743803556818,
               "name": "depth",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "Circle",
@@ -322,7 +324,8 @@
           "y": 0.2,
           "uniqueID": 1743803915935,
           "name": "side thickness",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Rotate",
@@ -394,7 +397,8 @@
           "y": 0.2,
           "uniqueID": 1743804027393,
           "name": "height",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Equation",
@@ -440,7 +444,8 @@
           "y": 0.3,
           "uniqueID": 1743804114645,
           "name": "underwidth",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Equation",
@@ -480,7 +485,8 @@
           "y": 0.4,
           "uniqueID": 1743804223957,
           "name": "depth",
-          "type": "number"
+          "type": "number",
+          "options": []
         }
       ],
       "allConnectors": [
@@ -653,7 +659,8 @@
           "y": 0.2,
           "uniqueID": 1743970012818,
           "name": "bench width",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Input",
@@ -661,7 +668,8 @@
           "y": 0.2,
           "uniqueID": 1743970025152,
           "name": "bench depth",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Input",
@@ -669,7 +677,8 @@
           "y": 0.3,
           "uniqueID": 1743970098022,
           "name": "bench thick",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Move",
@@ -725,7 +734,8 @@
           "y": 0.4,
           "uniqueID": 1743970241667,
           "name": "bench height",
-          "type": "number"
+          "type": "number",
+          "options": []
         }
       ],
       "allConnectors": [
@@ -778,7 +788,8 @@
       "y": 0.2,
       "uniqueID": 1743970044680,
       "name": "bench width",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Input",
@@ -786,7 +797,8 @@
       "y": 0.2,
       "uniqueID": 1743970051360,
       "name": "bench depth",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Input",
@@ -794,7 +806,8 @@
       "y": 0.3,
       "uniqueID": 1743970148294,
       "name": "ply thick",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Assembly",
@@ -859,21 +872,24 @@
           "x": 0,
           "y": 0.2,
           "uniqueID": 1743970295865,
-          "name": "ply thick"
+          "name": "ply thick",
+          "options": []
         },
         {
           "atomType": "Input",
           "x": 0,
           "y": 0.2,
           "uniqueID": 1743970295892,
-          "name": "bench width"
+          "name": "bench width",
+          "options": []
         },
         {
           "atomType": "Input",
           "x": 0,
           "y": 0.3,
           "uniqueID": 1743970296225,
-          "name": "bench depth"
+          "name": "bench depth",
+          "options": []
         },
         {
           "atomType": "Circle",
@@ -963,7 +979,8 @@
               "y": 0.2,
               "uniqueID": 1743977528821,
               "name": "Number",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "Input",
@@ -971,7 +988,8 @@
               "y": 0.2,
               "uniqueID": 1743977528928,
               "name": "Geometry",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "Rectangle",
@@ -1017,7 +1035,8 @@
               "y": 0.3,
               "uniqueID": 1743977529348,
               "name": "Dist",
-              "type": "number"
+              "type": "number",
+              "options": []
             }
           ],
           "allConnectors": [
@@ -1422,14 +1441,16 @@
           "x": 0,
           "y": 0.2,
           "uniqueID": 1743979215355,
-          "name": "bench depth"
+          "name": "bench depth",
+          "options": []
         },
         {
           "atomType": "Input",
           "x": 0,
           "y": 0.2,
           "uniqueID": 1743979215529,
-          "name": "ply thick"
+          "name": "ply thick",
+          "options": []
         },
         {
           "atomType": "Output",
@@ -1448,7 +1469,8 @@
           "x": 0,
           "y": 0.3,
           "uniqueID": 1743979216215,
-          "name": "bench width"
+          "name": "bench width",
+          "options": []
         },
         {
           "atomType": "Rectangle",
@@ -1642,7 +1664,8 @@
           "y": 0.4,
           "uniqueID": 1744219903870,
           "name": "side height",
-          "type": "number"
+          "type": "number",
+          "options": []
         },
         {
           "atomType": "Equation",
@@ -1710,7 +1733,8 @@
               "y": 0.2,
               "uniqueID": "778ab279-b09f-471f-805c-5fd021421dc8",
               "name": "geometry",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "Input",
@@ -1718,7 +1742,8 @@
               "y": 0.2,
               "uniqueID": "7bb1fb88-ff5d-4129-873b-d3960e05cde1",
               "name": "piece thickness",
-              "type": "number"
+              "type": "number",
+              "options": []
             },
             {
               "atomType": "ExtractTag",
@@ -1979,7 +2004,8 @@
       "y": 0.4,
       "uniqueID": 1743979572970,
       "name": "bench height",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Input",
@@ -1987,7 +2013,8 @@
       "y": 0.5,
       "uniqueID": 1744040624134,
       "name": "underwidth",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Input",
@@ -1995,7 +2022,8 @@
       "y": 0.6,
       "uniqueID": 1744219867504,
       "name": "side height",
-      "type": "number"
+      "type": "number",
+      "options": []
     },
     {
       "atomType": "Tag",
